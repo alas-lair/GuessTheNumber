@@ -23,7 +23,7 @@ public class GuessTheNumber : MonoBehaviour
     public void GameSetup()
     {
         lives = 3;
-        numberToGuess = Random.Range(int.MinValue, int.MaxValue);
+        numberToGuess = Random.Range(1, 10 + 1);
         header.text = $"I'm thinking of a number between 1 and 10. You have {lives} attempts to guess it...";
         guessInputField.text = "";
     }
