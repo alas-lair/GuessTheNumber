@@ -1,7 +1,11 @@
 using UnityEngine;
+using TMPro;
 
 public class GuessTheNumber : MonoBehaviour
 {
+    [SerializeField] TMP_Text header;
+    [SerializeField] TMP_InputField guessInputField;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
