@@ -20,7 +20,7 @@ public class GuessTheNumber : MonoBehaviour
         
     }
 
-    void GameSetup()
+    public void GameSetup()
     {
         lives = 3;
         numberToGuess = Random.Range(int.MinValue, int.MaxValue);
