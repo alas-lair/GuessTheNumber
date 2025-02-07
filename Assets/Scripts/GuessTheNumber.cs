@@ -11,7 +11,7 @@ public class GuessTheNumber : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        GameSetup();
     }
 
     // Update is called once per frame
