@@ -6,7 +6,7 @@ public class GuessTheNumber : MonoBehaviour
     [SerializeField] TMP_Text header;
     [SerializeField] TMP_InputField guessInputField;
     int numberToGuess;
-    int lives;
+    int attempts;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -22,9 +22,9 @@ public class GuessTheNumber : MonoBehaviour
 
     public void GameSetup()
     {
-        lives = 3;
+        attempts = 3;
         numberToGuess = Random.Range(1, 10 + 1);
-        header.text = $"I'm thinking of a number between 1 and 10. You have {lives} attempts to guess it...";
+        header.text = $"I'm thinking of a number between 1 and 10. You have {attempts} attempts to guess it...";
         guessInputField.text = "";
     }
 }
